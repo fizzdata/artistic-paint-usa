@@ -17,11 +17,11 @@ class Project extends Model
                 'units' => 460,
                 'type' => 'com', //Commercial
                 'images' => [
-                    '/assets/img/projects/1 Lyon/IMG_1616.jpg',
-                    '/assets/img/projects/1 Lyon/IMG_1619.jpg',
-                    '/assets/img/projects/1 Lyon/IMG_1621.jpg',
-                    '/assets/img/projects/1 Lyon/IMG_1623.jpg',
-                    '/assets/img/projects/1 Lyon/IMG_1626.jpg',
+                    '/assets/img/projects/1 Lyon/IMG_1616.JPG',
+                    '/assets/img/projects/1 Lyon/IMG_1619.JPG',
+                    '/assets/img/projects/1 Lyon/IMG_1621.JPG',
+                    '/assets/img/projects/1 Lyon/IMG_1623.JPG',
+                    '/assets/img/projects/1 Lyon/IMG_1626.JPG',
 
                 ]
             ],
@@ -30,7 +30,7 @@ class Project extends Model
                 'id' => 2,
                 'address' => '77 Commercial St Brooklyn NY 11222',
                 'outside_transparent_img' => '/assets/img/projects/77 Commercial/IMG_0736.png',
-                'outside_img' => '/assets/img/projects/77 Commercial/IMG_0736.jpg',
+                'outside_img' => '/assets/img/projects/77 Commercial/IMG_0736.JPG',
                 'units' => 460,
                 'type' => 'com', //Commercial
                 'images' => [
@@ -50,13 +50,13 @@ class Project extends Model
                 'id' => 3,
                 'address' => '147-35 95th Ave Jamaica, NY  11435',
                 'outside_transparent_img' => '/assets/img/projects/147-35 95th Avenue/147-35 95th Avenue.png',
-                'outside_img' => '/assets/img/projects/147-35 95th Avenue/147-35 95th Avenue.jpg',
+                'outside_img' => '/assets/img/projects/147-35 95th Avenue/147-35 95th Avenue.JPG',
                 'units' => 460,
                 'type' => 'com', //Commercial
                 'images' => [
-                    '/assets/img/projects/147-35 95th Avenue/147-35 95th Avenue.jpg',
-                    '/assets/img/projects/147-35 95th Avenue/147-35 95th Avenue.jpg',
-                    '/assets/img/projects/147-35 95th Avenue/147-35 95th Avenue.jpg',
+                    '/assets/img/projects/147-35 95th Avenue/147-35 95th Avenue.JPG',
+                    '/assets/img/projects/147-35 95th Avenue/147-35 95th Avenue.JPG',
+                    '/assets/img/projects/147-35 95th Avenue/147-35 95th Avenue.JPG',
                 ]
             ],
 
@@ -80,7 +80,7 @@ class Project extends Model
             [
                 'id' => 5,
                 'address' => '6101 16th Ave Brooklyn NY 11204',
-                'outside_transparent_img' => '/assets/img/projects/6101 16th Ave Brooklyn NY 11204/Image 31.PNG',
+                'outside_transparent_img' => '/assets/img/projects/6101 16th Ave Brooklyn NY 11204/Image 31.png',
                 'outside_img' => '/assets/img/projects/6101 16th Ave Brooklyn NY 11204/Image 3.PNG',
                 'units' => 460,
                 'type' => 'com', //Commercial
