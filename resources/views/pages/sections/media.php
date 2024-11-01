@@ -4,7 +4,7 @@
         <div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2">
           <div class="section-title">
             <h2>Media</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+            <p>Dive into our video gallery and witness the artistry and precision that defines our painting projects. From conception to completion, see how we transform spaces with every brushstroke.</p>
           </div>
         </div>
         <div class="col-lg-12">
