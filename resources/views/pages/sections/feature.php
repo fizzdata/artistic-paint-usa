@@ -10,8 +10,9 @@
                                 <div class="item-inner">
                                     <div class="front">
                                         <div class="inner">
-                                            <div class="icon">
-                                                <i class="flaticon-repair-tools"></i>
+                                            <div class="icon0">
+                                            <img width="40" src="<?php echo $feature['icon'];?>"></img>
+
                                             </div>
                                             <h4><?php echo $feature['title'];?></h4>
                                             <p><?php echo $feature['description'];?></p>
@@ -19,8 +20,8 @@
                                     </div>
                                     <div class="back">
                                         <div class="inner">
-                                            <div class="icon">
-                                                <i class="flaticon-repair-tools"></i>
+                                            <div class="icon0">
+                                                <img width="40" src="<?php echo $feature['icon'];?>"></img>
                                             </div>
                                             <h4><?php echo $feature['title'];?></h4>
                                             <p><?php echo $feature['description'];?></p>

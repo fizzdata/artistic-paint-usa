@@ -17,7 +17,8 @@ Route::get('/project/{id}', [ProjectController::class, 'detail'])->name('project
 Route::post('/contact', [ContactController:: class, 'index'])->name('contact');
 
 
-Route::get('/debug/{id}', [DebugController::class, 'debug'])->name('debug');
+Route::get('/debug/{id}/delete/project/{project_id}', [DebugController::class, 'delete_project'])->name('delete.project');
+Route::get('/debug/{id}/delete/media/{media_id}', [DebugController::class, 'delete_media'])->name('delete.media');
 
 
 // Route::get('/a', function () {

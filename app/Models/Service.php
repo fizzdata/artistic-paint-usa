@@ -26,7 +26,7 @@ class service extends Model
             ],
             [
                 'name' => 'Painting',
-                'img_url' => 'assets/img/service/Painting.JPG',
+                'img_url' => 'assets/img/service/Painting.jpg',
                 'description' => 'From careful planning to impeccable execution, our professional painters and stylists collaborate effortlessly on your home painting project to achieve the precise results you envision. With a strong focus on detail and commitment, we guarantee that every aspect of your project fulfills your highest standards.'
             ],
             [

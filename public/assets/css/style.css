@@ -1396,20 +1396,21 @@ p {
 }
 .home1.project .item a{
   display: inline-block;
-  text-align: center;
-  background: var(--orange);
-  height: 75px;
-  width: 80px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%) scale(0);
-  -webkit-transform: translate(-50%,-50%) scale(0);
-  -moz-transform: translate(-50%,-50%) scale(0);
-  -ms-transform: translate(-50%,-50%) scale(0);
-  -o-transform: translate(-50%,-50%) scale(0);
-  z-index: 5;
-  opacity: 0;
+text-align: center;
+background: var(--orange);
+height: 75px;
+width: 80px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%) scale(0);
+-webkit-transform: translate(-50%, -50%) scale(0);
+-moz-transform: translate(-50%, -50%) scale(0);
+-ms-transform: translate(-50%, -50%) scale(0);
+-o-transform: translate(-50%, -50%) scale(0);
+z-index: 5;
+opacity: 0;
+
 }
 .home1.project .item a i{
   font-size: 24px;

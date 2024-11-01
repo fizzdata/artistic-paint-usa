@@ -11,6 +11,7 @@
           <div class="slider">
             <div class="slides">
               <?php foreach ($media as $m): ?>
+                <!--Media ID <?= $m['id'] ?>-->
                 <div class="slide-item">
                   <div class="item">
                     <?php if ($m['type'] == 'video'): ?>
