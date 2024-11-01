@@ -11,7 +11,7 @@ class service extends Model
 
             [
                 'name' => 'Taping',
-                'img_url' => 'assets/img/service/taping.JPG',
+                'img_url' => 'assets/img/service/taping.jpg',
                 'description' => 'We offer high-quality, genuine taping solutions and expert drywall finishing. In addition, we provide reliable texturing services. All of these premium offerings are available at very competitive prices, guaranteeing excellent value for our clients.'
             ],
             [
