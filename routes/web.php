@@ -10,8 +10,8 @@ use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ProjectController;
 
-Route::redirect('/', '/under-construction');
-Route::get('/beta', [HomeController::class, 'index'])->name('home');
+//Route::redirect('/', '/under-construction');
+Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/under-construction', [HomeController::class, 'under_construction'])->name('under_construction');
 Route::get('/project/{id}', [ProjectController::class, 'detail'])->name('project.detail');
 Route::post('/contact', [ContactController:: class, 'index'])->name('contact');
