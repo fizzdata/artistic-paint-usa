@@ -76,10 +76,12 @@ class ProjectController extends Controller
 
 
      //dd($project, $inside);
+    $banner_title = $project[0]->address . ' - ' . $project[0]->units . ' Units';
+
 
         return view('pages.project', [
            
-            'banner_title' => $project[0]->address,
+            'banner_title' => $banner_title,
             'banner_img' => $project[0]->outsideLifestyle,
             'project' => $project,
             'inside' => $inside,

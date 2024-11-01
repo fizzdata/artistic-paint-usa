@@ -103,7 +103,7 @@ const onInsideChange = (event) => {
   }
 };
 
-const resizeImage = (file, callback, maxSize = 300) => {
+const resizeImage = (file, callback, maxSize = 800) => {
   const reader = new FileReader();
   reader.onload = (event) => {
     const img = new Image();
