@@ -11,7 +11,7 @@
                                     <div class="front">
                                         <div class="inner">
                                             <div class="icon0">
-                                            <img width="40" src="<?php echo $feature['icon'];?>"></img>
+                                            <img width="40" src="<?php echo $feature['iconB'];?>"></img>
 
                                             </div>
                                             <h4><?php echo $feature['title'];?></h4>
@@ -21,7 +21,7 @@
                                     <div class="back">
                                         <div class="inner">
                                             <div class="icon0">
-                                                <img width="40" src="<?php echo $feature['icon'];?>"></img>
+                                                <img width="40" src="<?php echo $feature['iconW'];?>"></img>
                                             </div>
                                             <h4><?php echo $feature['title'];?></h4>
                                             <p><?php echo $feature['description'];?></p>
