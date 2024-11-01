@@ -11,12 +11,12 @@ class service extends Model
 
             [
                 'name' => 'Taping',
-                'img_url' => 'assets/img/service/Taping.JPG',
+                'img_url' => 'assets/img/service/taping.JPG',
                 'description' => 'We offer high-quality, genuine taping solutions and expert drywall finishing. In addition, we provide reliable texturing services. All of these premium offerings are available at very competitive prices, guaranteeing excellent value for our clients.'
             ],
             [
                 'name' => 'Kadex',
-                'img_url' => 'assets/img/service/Kadex.WEBP',
+                'img_url' => 'assets/img/service/kadex.jpg',
                 'description' => 'Kadex is a vinyl-based coating specifically designed for the underside of concrete slabs. Ideal for both new builds and renovations, it hides existing concrete and smooths out imperfections, creating a surface that\'s ready for painting once it dries. Kadex can be tailored to your preferences, available in various colors or left neutral.'
             ],
             [
@@ -46,7 +46,7 @@ class service extends Model
             ],
             [
                 'name' => 'Epoxy Paint',
-                'img_url' => 'assets/img/service/Epoxy-paint.WEBP',
+                'img_url' => 'assets/img/service/Epoxy.jpg',
                 'description' => 'Applying and repairing epoxy floor coatings in commercial buildings demands skill and expertise for lasting durability. At Artistic Paint USA, our floor coating specialists will carefully plan and execute your commercial epoxy flooring project to guarantee a successful result.'
             ]
             ];

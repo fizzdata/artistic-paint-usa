@@ -198,19 +198,19 @@ const uploadImages = async () => {
       },
     }).then(response => {
     // Handle the response data
-    const responseData = response.data;
+    const responseData = response.data.message;
 
     // Display the JSON in a readable format
     alert(JSON.stringify(responseData, null, 2));
        // Resetting form values
     address.value = '';
     units.value = '';
-    outsideTransparentUrl = null
-    outsideTransparentFile.value = null; // Clear the file input
-    outsideLifestyleUrl.value = null;
-    outsideLifestyleFile.value = null; // Clear the file input
+    outsideTransparentUrl.value = null;
+    outsideTransparentFile.value = []; // Clear the file input
+    outsideLifestyleUrl.value = [];
+    outsideLifestyleFile.value = []; // Clear the file input
     insideFiles.value = []; // Reset inside files array
-    insideUrls.value = null
+    insideUrls.value = [];
 
   })
   .catch(error => {

@@ -160,10 +160,16 @@ const uploadImages = async () => {
       },
     }).then(response => {
     // Handle the response data
-    const responseData = response.data;
+    const responseData = response.data.message;
 
     // Display the JSON in a readable format
-    console.log(JSON.stringify(responseData, null, 2)); 
+    alert(JSON.stringify(responseData, null, 2)); 
+    insideUrls.value = null;
+    insideFiles.value = null;
+    title.value = null;
+    description.value = null;
+    videoId.value = null;
+    videoSrc = ref(`https://www.youtube.com/embed/${videoId.value}`); 
   })
   .catch(error => {
     // Handle errors
