@@ -64,7 +64,7 @@ class Contact extends Model
          
         try{
 
-            Mail::to(['Office@artisticpaintusa.com', 'info@peneh.com'])->send(new ContactFormMail($mailData));
+            Mail::to(['Office@artisticpaintusa.com'])->send(new ContactFormMail($mailData));
 
             return true;
         
