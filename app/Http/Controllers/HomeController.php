@@ -18,7 +18,7 @@ class HomeController extends Controller
             'features' => Feature::data(),
             'services' => Service::data(),
             'projects' => Project::all(),
-            'media' => Media::all()
+            'media' => Media::orderBy('id', 'desc')->get()
             ]);
     }
 
