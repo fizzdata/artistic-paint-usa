@@ -14,6 +14,17 @@
       <input type="number" v-model="units"  class="border border-gray-300 rounded p-2" required />
     </div>
 
+    <!-- units -->
+    <div class="w-full">
+      <label class="block mb-2 text-gray-700">type:</label>
+      
+      <select v-model="type"  class="border border-gray-300 rounded p-2">
+      <option value="com">Commercial</option>
+      <option value="res">Residential</option>
+      <option value="otr">Other</option>
+      </select>
+    </div>
+
      <!-- Outside Transparent Picture -->
     <div class="w-full">
       <label class="block mb-2 text-gray-700">Outside Transparent Picture:</label>
@@ -62,6 +73,7 @@ const insideUrls = ref([]);
 const insideFiles = ref([]);
 const address = ref('');
 const units = ref(0);
+const type = ref(0);
 
 
 const onOutsideTransparentChange = (event) => {
@@ -82,7 +94,7 @@ const onOutsideLifestyleChange = (event) => {
     resizeImage(file, (resizedDataUrl) => {
       outsideLifestyleUrl.value = resizedDataUrl;
       outsideLifestyleFile.value = dataURLtoFile(resizedDataUrl, file.name);
-    }, 800);
+    }, 1000);
   } else {
     alert('Please select an image file.');
   }
@@ -159,6 +171,10 @@ const uploadImages = async () => {
     alert('Units Required')
     return
   }
+  if (!type.value) {
+    alert('Type Required')
+    return
+  }
 
   if (!outsideTransparentFile.value) {
     alert('outsideTransparentFile Required')
@@ -173,6 +189,7 @@ const uploadImages = async () => {
   filesData.push({
       address: address.value,
       units: units.value,
+      type: type.value,
 
       outsideTransparent: await toBase64(outsideTransparentFile.value),
       outsideLifestyle: await toBase64(outsideLifestyleFile.value)

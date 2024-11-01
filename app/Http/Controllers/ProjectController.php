@@ -27,7 +27,7 @@ class ProjectController extends Controller
       ->insertGetId([
         'address' => $filesData[0]['address'],
         'units' => $filesData[0]['units'],
-        'type' => '',
+        'type' => $filesData[0]['type'],
         'outsideTransparent' => $filesData[0]['outsideTransparent'],
         'outsideLifestyle' => $filesData[0]['outsideLifestyle'],
 
