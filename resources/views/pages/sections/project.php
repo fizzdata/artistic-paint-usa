@@ -14,7 +14,7 @@
                         <li class="active"><a href="/#!" data-mixitup-control="" data-filter="all" class="mixitup-control-active">all</a></li>
                         <li><a href="/#!" data-mixitup-control="" data-filter=".com">commercial</a></li>
                         <li><a href="/#!" data-mixitup-control="" data-filter=".res">residential</a></li>
-                        <li><a href="/#!" data-mixitup-control="" data-filter=".more">More of our work</a></li>
+                        <li><a href="/#!" data-mixitup-control="" data-filter=".otr">More of our work</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-12">
