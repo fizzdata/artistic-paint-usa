@@ -2628,13 +2628,20 @@ p {
   background-color: rgba(0,0,0,0.5); /* Optional: make the buttons visible over your content */
 }
 
-/* slider */
-
+/* media slider */
 .slider {
   overflow-x: auto;
   white-space: nowrap;
   scroll-behavior: smooth;
   cursor: grab;
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+  z-index: 1;
+
+}
+
+.slider::-webkit-scrollbar {
+  display: none;  /* Safari and Chrome */
 }
 
 .slides {
@@ -2645,32 +2652,16 @@ p {
 
 .slide-item {
   flex: 0 0 auto;
-  height: 600px; /* Adjust as needed */
-  margin-right: 20px; /* Space between items */
+  height: 600px;
+  margin-right: 20px;  /* Space between items */
   scroll-snap-align: start;
 }
 
-.slide-item img {
+.slide-item img, .slide-item iframe {
   height: 600px;
   display: block;
-}
-.slide-item video {
-  height: 600px;
-  display: block;
-}
+  z-index: 2;
 
- .slider {
-  overflow-x: scroll;
-  white-space: nowrap;
-  scroll-behavior: smooth;
-  cursor: grab;
-  -ms-overflow-style: none;  /* Internet Explorer 10+ */
-  scrollbar-width: none;  /*Firefox */
-} 
-
-.slider::-webkit-scrollbar {
-  display: none;  /* Safari and Chrome */
 }
-
 
 /* end media slider */

@@ -16,12 +16,8 @@ return new class extends Migration
             $table->string('address');
             $table->integer('units');
             $table->string('type');
-            $table->string('main_img_url');
-            $table->string('img_1_url');
-            $table->string('img_2_url');
-            $table->string('img_3_url');
-            $table->string('img_4_url');
-            $table->string('video_url');
+            $table->longtext('outsideTransparent');
+            $table->longText('outsideLifestyle');
             $table->timestamps();
         });
     }

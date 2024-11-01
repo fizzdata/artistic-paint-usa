@@ -22,7 +22,7 @@
         <?php foreach($projects as $project): ?>
             <div class="col-lg-4 col-md-6 mix ext <?php echo $project['type']; ?>">
                 <div class="item wow fadeInRight" data-wow-delay="0.3s" data-wow-duration="1s" style="visibility: hidden; animation-duration: 1s; animation-delay: 0.3s; animation-name: none;">
-                    <img src="<?php echo $project['outside_transparent_img']; ?>" alt="Project" >
+                    <img style="width:300px; height:300px" src="<?php echo $project['outsideTransparent']; ?>" alt="Project" >
                     <a href="/project/<?php echo $project['id']; ?>" class="1popup-image">
                     <div style="color: black; background-color:#e1605f; width:150px; padding:10px">
                     <img src="assets/img/projects/enlarge.svg" style="width: 50px">

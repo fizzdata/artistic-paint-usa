@@ -11,13 +11,14 @@ use Illuminate\Http\Request;
 class HomeController extends Controller
 {
     public function index(){
+        //dd(Project::all());
         return view('pages.index', [
             'banner_title' => 'Professional painting services in Tri State area',
             'banner_img' => '/assets/img/home-page-v3.jpg',
             'features' => Feature::data(),
             'services' => Service::data(),
-            'projects' => Project::data(),
-            'media' => Media::data()
+            'projects' => Project::all(),
+            'media' => Media::all()
             ]);
     }
 
