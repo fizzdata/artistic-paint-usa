@@ -7,6 +7,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="csrf-token" content="<?php echo csrf_token() ?>">
 
+    <meta content="Professional painting services in Tri State area" name="description">
+  <meta content="artistic, Paint, Painting, Tri state, Taping, , Kodex, Faux Finishes, Vanetian Plaster, Wallpaper hanging, Epoxy Paint, Intumescent Painting" name="keywords">
+
+    <meta name="subject" content="Professional painting services in Tri State area | Artistic Paint">
+    <meta name="copyright" content="Artistic Paint USA">
+    <meta name="language" content="EN">
+    <meta name="robots" content="index,follow" />
+    <meta name="topic" content="Taping, , Kodex, Faux Finishes, Vanetian Plaster, Wallpaper hanging, Epoxy Paint, Intumescent Painting">
+    <meta name="summary" content="">
+    <meta name="Classification" content="Taping, , Kodex, Faux Finishes, Vanetian Plaster, Wallpaper hanging, Epoxy Paint, Intumescent Painting">
+    <meta name="author" content="Joel Kasirer">
+    <meta name="designer" content="Joel Kasirer http://peneh.com">
+    <meta name="copyright" content="Joel Tabak">
+    <meta name="reply-to" content="office@artisticpaintusa.com">
+    <meta name="owner" content="Joel Tabak">
+    <meta name="url" content="http://www.artisticpaintusa.com">
+    <meta name="identifier-URL" content="https://www.artisticpaintusa.com">
+    <meta name="directory" content="submission">
+    <meta name="category" content="Digital Marketing">
+    <meta name="coverage" content="Worldwide">
+    <meta name="distribution" content="Global">
+    <meta name="rating" content="Great">
+
 
     <!-- favicon -->
     <link rel="shortcut icon" href="/assets/img/favicon.png" type="image/x-icon">
