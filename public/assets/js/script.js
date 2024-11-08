@@ -259,8 +259,8 @@ $(function(){
 /*=====================================
 /* slider
 /*=====================================*/
-
-    document.querySelector('.slider').addEventListener('mousedown', function(e) {
+//i renamed the class to deactivate it
+    document.querySelector('.slider-old').addEventListener('mousedown', function(e) {
         e.preventDefault();
         const slider = this;
         let startX = e.pageX - slider.offsetLeft;

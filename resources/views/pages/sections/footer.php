@@ -1,59 +1,83 @@
 <!-- start footer area -->
 <footer data-img="/assets/img/images/footer-bg.jpg" style="background: url(&quot;/assets/img/images/footer-bg.jpg&quot;) center center / cover no-repeat;">
     <!-- start footer-top area -->
-    <section class="footer-top">
-        <div class="container">
-            <div class="row">
-            <div class="col-lg-6 col-md-6 d-flex justify-content-center align-items-center">
-    <img style="height:150px" src="/assets/img/logo-color.svg" alt="Logo">
-</div>
-                <div class="col-lg-6 col-md-6">
-
-                    <div class="content">
-                        <div class="title">
-                            <h5>Contact Sales</h5>
-                        </div>
-                        <ul class="address">
-                            
-                            
-                            <li class="d-flex align-items-center">
-                                <div class="icon">
-                                    <i class="fas fa-phone-alt"></i>
-                                </div>
-                                <h2>+1 347-831-4344</h2>
-                            </li>
-                        </ul>
-                        <div class="title" style="margin-top: 20px;">
-                            <h5>Office</h5>
-                        </div>
-                        <ul class="address">
-                            <li class="d-flex align-items-center">
-                                <div class="icon">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                </div>
-                                <p>331-333 Rutledge Street, #209<br>
-                                Brooklyn, NY 11211</p>
-                            </li>
-                            <li class="d-flex align-items-center">
-                                <div class="icon">
-                                    <i class="fas fa-phone-alt"></i>
-                                </div>
-                                <p>+1 718-924-5300</p>
-                            </li>
-                            
-                            <li class="d-flex align-items-center">
-                                <div class="icon">
-                                    <i class="far fa-envelope"></i>
-                                </div>
-                                <p> Office@artisticpaintusa.com</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-               
+    <section class="footer-top py-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 d-flex justify-content-center align-items-center">
+        <img style="height:150px" src="/assets/img/logo-color.svg" alt="Logo">
+      </div>
+      <div class="col-lg-6 col-md-6">
+        <div class="content">
+          <div class="title">
+            <h5>Contact Sales</h5>
+          </div>
+          <ul class="address list-unstyled">
+            <li class="d-flex align-items-center mb-3">
+              <div class="icon me-2">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <h2>+1 347-831-4344</h2>
+            </li>
+          </ul>
+          <div class="row">
+            <div class="col-lg-6 col-md-6">
+              <div class="title">
+                <h5>Brooklyn Office</h5>
+              </div>
+              <ul class="address list-unstyled">
+                <li class="d-flex align-items-center mb-2">
+                  <div class="icon me-2">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <p>331-333 Rutledge Street, #209<br> Brooklyn, NY 11211</p>
+                </li>
+                <li class="d-flex align-items-center mb-2">
+                  <div class="icon me-2">
+                    <i class="fas fa-phone-alt"></i>
+                  </div>
+                  <p>+1 718-924-5300</p>
+                </li>
+                <li class="d-flex align-items-center">
+                  <div class="icon me-2">
+                    <i class="far fa-envelope"></i>
+                  </div>
+                  <p>Office@artisticpaintusa.com</p>
+                </li>
+              </ul>
             </div>
+            <div class="col-lg-6 col-md-6">
+              <div class="title">
+                <h5>New Jersey Office</h5>
+              </div>
+              <ul class="address list-unstyled">
+                <li class="d-flex align-items-center mb-2">
+                  <div class="icon me-2">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <p>331-333 Rutledge Street, #209<br> Brooklyn, NY 11211</p>
+                </li>
+                <li class="d-flex align-items-center mb-2">
+                  <div class="icon me-2">
+                    <i class="fas fa-phone-alt"></i>
+                  </div>
+                  <p>+1 718-924-5300</p>
+                </li>
+                <li class="d-flex align-items-center">
+                  <div class="icon me-2">
+                    <i class="far fa-envelope"></i>
+                  </div>
+                  <p>Office@artisticpaintusa.com</p>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </div>
+</section>
+
     <!-- end footer-top area -->
 
     <!-- start footer-bottom area -->
@@ -63,17 +87,10 @@
                 <div class="col-lg-12">
                     <div class="bg">
                         <div class="row">
-                            <div class="col-lg-6">
-                                <p>Copyright © 2021, All Rights Reserved.</p>
+                            <div class="col-lg-12">
+                                <p style="text-align: center; color: gray">Copyright © <?= date('Y');?>, All Rights Reserved. <a style="color: gray" href="http://fizzdata.com">Powered by fizzdata.com</a></p>
                             </div>
-                            <div class="col-lg-6">
-                                <ul class="d-flex justify-content-end">
-                                    <li><a href="#about">about us</a></li>
-                                    <li><a href="#services">service</a></li>
-                                    <li><a href="#work">Work</a></li>
-                                    <li><a href="#contact">contact us</a></li>
-                                </ul>
-                            </div>
+
                         </div>
                     </div>
                 </div>

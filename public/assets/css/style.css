@@ -2631,38 +2631,49 @@ opacity: 0;
 
 /* media slider */
 .slider {
-  overflow-x: auto;
-  white-space: nowrap;
-  scroll-behavior: smooth;
-  cursor: grab;
-  -ms-overflow-style: none;  /* Internet Explorer 10+ */
-  scrollbar-width: none;  /* Firefox */
-  z-index: 1;
-
-}
-
-.slider::-webkit-scrollbar {
-  display: none;  /* Safari and Chrome */
+  position: relative;
+  overflow: hidden;
 }
 
 .slides {
   display: flex;
-  white-space: nowrap;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 
 .slide-item {
-  flex: 0 0 auto;
+  min-width: 100%;
+  box-sizing: border-box;
   height: 600px;
-  margin-right: 20px;  /* Space between items */
-  scroll-snap-align: start;
 }
 
-.slide-item img, .slide-item iframe {
-  height: 600px;
-  display: block;
-  z-index: 2;
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 30px 10px;
+  z-index: 10;
+}
 
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.video-wrapper {
+  pointer-events: auto;
+}
+
+iframe {
+  width: 100%;
+  /*height: auto;*/
+  pointer-events: auto; /* Ensure video remains interactive */
 }
 
 /* end media slider */
