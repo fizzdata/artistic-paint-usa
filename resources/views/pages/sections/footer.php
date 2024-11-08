@@ -9,7 +9,7 @@
       </div>
       <div class="col-lg-6 col-md-6">
         <div class="content">
-          <div class="title">
+          <div class="title" style="padding: 20px 0px 10px 0px;">
             <h5>Contact Sales</h5>
           </div>
           <ul class="address list-unstyled">
@@ -22,7 +22,7 @@
           </ul>
           <div class="row">
             <div class="col-lg-6 col-md-6">
-              <div class="title">
+              <div class="title" style="padding: 20px 0px 10px 0px;">
                 <h5>Brooklyn Office</h5>
               </div>
               <ul class="address list-unstyled">
@@ -47,7 +47,7 @@
               </ul>
             </div>
             <div class="col-lg-6 col-md-6">
-              <div class="title">
+              <div class="title" style="padding: 20px 0px 10px 0px;">
                 <h5>New Jersey Office</h5>
               </div>
               <ul class="address list-unstyled">
