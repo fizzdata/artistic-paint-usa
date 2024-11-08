@@ -55,7 +55,7 @@
                   <div class="icon me-2">
                     <i class="fas fa-map-marker-alt"></i>
                   </div>
-                  <p>331-333 Rutledge Street, #209<br> Brooklyn, NY 11211</p>
+                  <p>260 Broadway<br> Newark, NJ 07104</p>
                 </li>
                 <li class="d-flex align-items-center mb-2">
                   <div class="icon me-2">
