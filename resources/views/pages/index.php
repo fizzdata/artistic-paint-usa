@@ -7,7 +7,7 @@
 
 
 require('sections/header.php');
-require('sections/banner.php');
+require('sections/banner2.php');
 require('sections/feature.php');
 require('sections/about.php');
 //require('sections/newsletter.php');
