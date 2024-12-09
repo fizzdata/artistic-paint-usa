@@ -4,8 +4,8 @@
         <div class="container h-100">
             <div class="row h-100 align-items-center justify-content-center">
                 <div class="col-lg-10 text-center">
-                                    
-                    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="<?= env('APP_URL')?>/assets/video/banner.mp4" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Compilation2"></iframe></div>
+
+                    <div style="padding:56.25% 0 0 0;position:relative;"><iframe id="videoFrame" src="<?= env('APP_URL')?>/assets/video/banner.mp4" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;background-color: transparent !important;" title="Compilation2"></iframe></div>
 
 
                 </div>
@@ -13,4 +13,25 @@
         </div>
     </div>
 </section>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var iframe = document.getElementById("videoFrame");
+    var css = 'body:-webkit-full-page-media { background-color: transparent !important; }';
+    var style = document.createElement('style');
+    if (iframe.contentDocument) {
+      style.type = 'text/css';
+      if (style.styleSheet){
+        style.styleSheet.cssText = css;
+      } else {
+        style.appendChild(document.createTextNode(css));
+      }
+      iframe.contentDocument.head.appendChild(style);
+    } else {
+      iframe.onload = function() {
+        iframe.contentDocument.head.appendChild(style);
+      }
+    }
+  });
+</script>
+
 <!-- end banner area -->
