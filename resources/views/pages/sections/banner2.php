@@ -5,7 +5,7 @@
             <div class="row h-100 align-items-center justify-content-center">
                 <div class="col-lg-10 text-center">
 
-                    <div style="padding:56.25% 0 0 0;position:relative;"><iframe id="videoFrame" src="<?= env('APP_URL')?>/assets/video/banner.mp4" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;background-color: transparent !important;" title="Compilation2"></iframe></div>
+                    <div style="padding:75% 0 0 0;position:relative;overflow: hidden;"><iframe id="videoFrame" src="<?= env('APP_URL')?>/assets/video/banner.mp4" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;background-color: transparent !important;transform: scale(1.5);transform-origin: center;" title="Compilation2"></iframe></div>
 
 
                 </div>
