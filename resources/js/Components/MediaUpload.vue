@@ -1,42 +1,73 @@
 <template>
-  <div class="flex flex-col items-center justify-center p-4 space-y-4">
-    <!-- address -->
-    <div class="w-full">
-      <label class="block mb-2 text-gray-700">Title:</label>
-      
-      <input type="text"  v-model="title" class="border border-gray-300 rounded p-2" required/>
-    </div>
+    <div class="container mx-auto p-6">
+    <h2 class="text-2xl font-bold text-gray-800 mb-6">Submit New Project Details</h2>
 
-    <!-- units -->
-    <div class="w-full">
-      <label class="block mb-2 text-gray-700">Description</label>
-      
-      <input type="text" v-model="description"  class="border border-gray-300 rounded p-2" required />
-    </div>
-
-     
-
-    <!-- Outside Lifestyle Picture -->
-    <div class="w-full">
-      <label class="block mb-2 text-gray-700">YouTobe Video id:</label>
-      <iframe v-if="videoId" width="250" eight="150" :src="videoSrc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
- 
-      <input type="text" v-model="videoId" class="border border-gray-300 rounded p-2"  required/>
-    </div>
-
-    <!-- Unlimited Inside Pictures -->
-    <div class="w-full">
-      <label class="block mb-2 text-gray-700">Pictures:</label>
-      <div v-for="(url, index) in insideUrls" :key="index" class="mb-2">
-        <img :src="url" :alt="'Inside Picture ' + (index + 1)" class="max-w-full h-auto rounded-lg shadow-lg" />
+    <div class="flex flex-col items-center justify-center space-y-6">
+      <!-- Title -->
+      <div class="w-full max-w-md">
+        <label class="block mb-2 text-gray-700">Title:</label>
+        <input 
+          type="text" 
+          v-model="title" 
+          class="border border-gray-300 rounded-lg p-3 w-full focus:outline-none focus:ring-2 focus:ring-blue-500" 
+          required
+        />
       </div>
-      <input type="file" @change="onInsideChange" multiple class="border border-gray-300 rounded p-2" required/>
-    </div>
 
-    <!-- Upload Button -->
-    <button @click="uploadImages" class="bg-blue-500 text-white py-2 px-4 rounded shadow-lg hover:bg-blue-700">
-      Submit
-    </button>
+      <!-- Description -->
+      <div class="w-full max-w-md">
+        <label class="block mb-2 text-gray-700">Description:</label>
+        <input 
+          type="text" 
+          v-model="description" 
+          class="border border-gray-300 rounded-lg p-3 w-full focus:outline-none focus:ring-2 focus:ring-blue-500" 
+          required 
+        />
+      </div>
+
+      <!-- YouTube Video ID -->
+      <div class="w-full max-w-md">
+        <label class="block mb-2 text-gray-700">YouTube Video ID:</label>
+        <div v-if="videoId" class="mb-2">
+          <iframe 
+            width="250" 
+            height="150" 
+            :src="videoSrc" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+          </iframe>
+        </div>
+        <input 
+          type="text" 
+          v-model="videoId" 
+          class="border border-gray-300 rounded-lg p-3 w-full focus:outline-none focus:ring-2 focus:ring-blue-500" 
+          required
+        />
+      </div>
+
+      <!-- media Pictures -->
+      <div class="w-full max-w-md">
+        <label class="block mb-2 text-gray-700">Pictures:</label>
+        <div v-for="(url, index) in insideUrls" :key="index" class="mb-2">
+          <img :src="url" :alt="'Inside Picture ' + (index + 1)" class="max-w-full h-auto rounded-lg shadow-lg" />
+        </div>
+        <input 
+          type="file" 
+          @change="onInsideChange" 
+          multiple 
+          class="border border-gray-300 rounded-lg p-3 w-full focus:outline-none focus:ring-2 focus:ring-blue-500" 
+          required
+        />
+      </div>
+
+      <!-- Submit Button -->
+      <button 
+        @click="uploadImages" 
+        class="bg-blue-500 text-white py-3 px-6 rounded-lg shadow-md hover:bg-blue-700 transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+        Submit
+      </button>
+    </div>
   </div>
 </template>
 
@@ -177,7 +208,7 @@ const uploadImages = async () => {
   });
 }
 const toBase64 = file => new Promise((resolve, reject) => {
-  const reader = new FileReader();
+const reader = new FileReader();
   reader.readAsDataURL(file);
   reader.onload = () => resolve(reader.result);
   reader.onerror = error => reject(error);

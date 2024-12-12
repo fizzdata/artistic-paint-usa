@@ -5,18 +5,18 @@
             <div class="row">
                 <div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2">
                     <div class="section-title wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="1s" style="visibility: hidden; animation-duration: 1s; animation-delay: 0.3s; animation-name: none;">
-                        <h2>Recant Project</h2>
+                        <h2>explore our project</h2>
                         <p>Browse through our image collection and explore the vivid transformations we've brought to life. Each project reflects our dedication to excellence and eye for detail, captured in stunning visuals.</p>
                     </div>
                 </div>
-                <!-- <div class="col-lg-12">
+                <div class="col-lg-12">
                     <ul class="project-menu d-flex justify-content-center wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="1s" style="visibility: hidden; animation-duration: 1s; animation-delay: 0.3s; animation-name: none;">
                         <li class="active"><a href="/#!" data-mixitup-control="" data-filter="all" class="mixitup-control-active">all</a></li>
                         <li><a href="/#!" data-mixitup-control="" data-filter=".com">commercial</a></li>
                         <li><a href="/#!" data-mixitup-control="" data-filter=".res">residential</a></li>
                         <li><a href="/#!" data-mixitup-control="" data-filter=".otr">More of our work</a></li>
                     </ul>
-                </div> -->
+                </div>
                 <div class="col-lg-12">
     <div class="row filters" id="MixItUp11799C">
         <?php foreach($projects as $project): ?>
@@ -37,10 +37,7 @@
        
     </div>
 </div>
-<div class="container text-center mt-5">
-        <a href="/projects" class="btn btn-success btn-lg" style="background-color: #e26160;font-size: 18px;
-            padding: 15px 30px;">See all Projects</a>
-    </div>
+
             </div>
         </div>
     </section>

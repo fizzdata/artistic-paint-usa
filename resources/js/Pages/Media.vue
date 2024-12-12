@@ -1,6 +1,6 @@
 <script setup>
 import MediaUpload from '@/Components/MediaUpload.vue';
-
+import MediaList from '@/Components/MediaList.vue';
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
 import { Head } from '@inertiajs/vue3';
 </script>
@@ -23,7 +23,7 @@ import { Head } from '@inertiajs/vue3';
                     class="overflow-hidden bg-white shadow-sm sm:rounded-lg"
                 >
                     <div class="p-6 text-gray-900">
-
+                    <media-list></media-list>
                     <media-upload></media-upload>
                         </div>
                 </div>

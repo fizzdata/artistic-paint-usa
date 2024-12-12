@@ -17,7 +17,7 @@ class HomeController extends Controller
             'banner_img' => '/assets/img/home-page-v3.jpg',
             'features' => Feature::data(),
             'services' => Service::data(),
-            'projects' => Project::all(),
+            'projects' => Project::orderBy('id', 'desc')->take(6)->get(),
             'media' => Media::orderBy('id', 'desc')->get()
             ]);
     }

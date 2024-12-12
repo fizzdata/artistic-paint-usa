@@ -13,6 +13,18 @@ class MediaController extends Controller
          
       ]);
       }
+
+      public function load(){
+        $project_detail = DB::table('media')->select('id', 'title', 'description')->get();
+    
+        if($project_detail):
+          return response()->json(['success' => true, 'projects' => $project_detail]);
+        else:
+          return response()->json(['success' => true, 'projects' => $project_detail]);
+        endif;
+    
+      }
+    
       public function user_upload(Request $request){
     
         //dd($request);
@@ -30,7 +42,9 @@ class MediaController extends Controller
 
         endif;
     
-        
+        //Initiate $Img
+         $img = false;
+
         foreach($filesData[2]['pictures'] as $img):
     
           $img = DB::table('media')

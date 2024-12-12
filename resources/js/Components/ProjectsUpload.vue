@@ -1,61 +1,92 @@
 <template>
-  <div class="flex flex-col items-center justify-center p-4 space-y-4">
-    <!-- address -->
-    <div class="w-full">
-      <label class="block mb-2 text-gray-700">Project full Address:</label>
-      
-      <input type="text"  v-model="address" class="border border-gray-300 rounded p-2" required/>
-    </div>
+       <div class="container mx-auto p-6">
+    <h2 class="text-2xl font-bold text-gray-800 mb-6">Add New Projects</h2>
 
-    <!-- units -->
-    <div class="w-full">
-      <label class="block mb-2 text-gray-700">Project units Amount:</label>
-      
-      <input type="number" v-model="units"  class="border border-gray-300 rounded p-2" required />
-    </div>
-
-    <!-- units -->
-    <div class="w-full">
-      <label class="block mb-2 text-gray-700">type:</label>
-      
-      <select v-model="type"  class="border border-gray-300 rounded p-2">
-      <option value="com">Commercial</option>
-      <option value="res">Residential</option>
-      <option value="otr">Other</option>
-      </select>
-    </div>
-
-     <!-- Outside Transparent Picture -->
-    <div class="w-full">
-      <label class="block mb-2 text-gray-700">Outside Transparent Picture:</label>
-      <div v-if="outsideTransparentUrl" class="mb-2">
-        <img :src="outsideTransparentUrl" alt="Outside Transparent" class="max-w-full h-auto rounded-lg shadow-lg" />
+    <div class="flex flex-col items-center justify-center space-y-6">
+      <!-- Address -->
+      <div class="w-full max-w-md">
+        <label class="block mb-2 text-gray-700">Project Full Address:</label>
+        <input 
+          type="text" 
+          v-model="address" 
+          class="border border-gray-300 rounded-lg p-3 w-full focus:outline-none focus:ring-2 focus:ring-blue-500" 
+          required
+        />
       </div>
-      <input type="file" @change="onOutsideTransparentChange" class="border border-gray-300 rounded p-2" required/>
-    </div>
 
-    <!-- Outside Lifestyle Picture -->
-    <div class="w-full">
-      <label class="block mb-2 text-gray-700">Outside Lifestyle Picture:</label>
-      <div v-if="outsideLifestyleUrl" class="mb-2">
-        <img :src="outsideLifestyleUrl" alt="Outside Lifestyle" class="max-w-full h-auto rounded-lg shadow-lg" />
+      <!-- Units -->
+      <div class="w-full max-w-md">
+        <label class="block mb-2 text-gray-700">Project Units Amount:</label>
+        <input 
+          type="number" 
+          v-model="units"  
+          class="border border-gray-300 rounded-lg p-3 w-full focus:outline-none focus:ring-2 focus:ring-blue-500" 
+          required 
+        />
       </div>
-      <input type="file" @change="onOutsideLifestyleChange" class="border border-gray-300 rounded p-2" required/>
-    </div>
 
-    <!-- Unlimited Inside Pictures -->
-    <div class="w-full">
-      <label class="block mb-2 text-gray-700">Inside Pictures:</label>
-      <div v-for="(url, index) in insideUrls" :key="index" class="mb-2">
-        <img :src="url" :alt="'Inside Picture ' + (index + 1)" class="max-w-full h-auto rounded-lg shadow-lg" />
+      <!-- Type -->
+      <div class="w-full max-w-md">
+        <label class="block mb-2 text-gray-700">Project Type:</label>
+        <select 
+          v-model="type" 
+          class="border border-gray-300 rounded-lg p-3 w-full focus:outline-none focus:ring-2 focus:ring-blue-500">
+          <option value="com">Commercial</option>
+          <option value="res">Residential</option>
+          <option value="otr">Other</option>
+        </select>
       </div>
-      <input type="file" @change="onInsideChange" multiple class="border border-gray-300 rounded p-2" required/>
-    </div>
 
-    <!-- Upload Button -->
-    <button @click="uploadImages" class="bg-blue-500 text-white py-2 px-4 rounded shadow-lg hover:bg-blue-700">
-      Upload Images
-    </button>
+      <!-- Outside Transparent Picture -->
+      <div class="w-full max-w-md">
+        <label class="block mb-2 text-gray-700">Outside Transparent Picture:</label>
+        <div v-if="outsideTransparentUrl" class="mb-2">
+          <img :src="outsideTransparentUrl" alt="Outside Transparent" class="max-w-full h-auto rounded-lg shadow-lg" />
+        </div>
+        <input 
+          type="file" 
+          @change="onOutsideTransparentChange" 
+          class="border border-gray-300 rounded-lg p-3 w-full focus:outline-none focus:ring-2 focus:ring-blue-500" 
+          required
+        />
+      </div>
+
+      <!-- Outside Lifestyle Picture -->
+      <div class="w-full max-w-md">
+        <label class="block mb-2 text-gray-700">Outside Lifestyle Picture:</label>
+        <div v-if="outsideLifestyleUrl" class="mb-2">
+          <img :src="outsideLifestyleUrl" alt="Outside Lifestyle" class="max-w-full h-auto rounded-lg shadow-lg" />
+        </div>
+        <input 
+          type="file" 
+          @change="onOutsideLifestyleChange" 
+          class="border border-gray-300 rounded-lg p-3 w-full focus:outline-none focus:ring-2 focus:ring-blue-500" 
+          required
+        />
+      </div>
+
+      <!-- Unlimited Inside Pictures -->
+      <div class="w-full max-w-md">
+        <label class="block mb-2 text-gray-700">Inside Pictures:</label>
+        <div v-for="(url, index) in insideUrls" :key="index" class="mb-2">
+          <img :src="url" :alt="'Inside Picture ' + (index + 1)" class="max-w-full h-auto rounded-lg shadow-lg" />
+        </div>
+        <input 
+          type="file" 
+          @change="onInsideChange" 
+          multiple 
+          class="border border-gray-300 rounded-lg p-3 w-full focus:outline-none focus:ring-2 focus:ring-blue-500" 
+          required
+        />
+      </div>
+
+      <!-- Upload Button -->
+      <button 
+        @click="uploadImages" 
+        class="bg-blue-500 text-white py-3 px-6 rounded-lg shadow-md hover:bg-blue-700 transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+        Upload Images
+      </button>
+    </div>
   </div>
 </template>
 

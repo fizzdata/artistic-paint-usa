@@ -17,6 +17,17 @@ class ProjectController extends Controller
      
   ]);
   }
+
+  public function load(){
+    $project_detail = DB::table('projects')->select('id', 'name', 'address')->get();
+
+    if($project_detail):
+      return response()->json(['success' => true, 'projects' => $project_detail]);
+    else:
+      return response()->json(['success' => true, 'projects' => $project_detail]);
+    endif;
+
+  }
   public function user_upload(Request $request){
 
     //dd($request);
@@ -78,13 +89,24 @@ class ProjectController extends Controller
      //dd($project, $inside);
     $banner_title = $project[0]->address . ' - ' . $project[0]->units . ' Units';
 
-
         return view('pages.project', [
            
             'banner_title' => $banner_title,
             'banner_img' => $project[0]->outsideLifestyle,
             'project' => $project,
             'inside' => $inside,
+            ]);
+    }
+
+    public function all(Request $request){
+
+
+        return view('pages.projects_all', [
+           
+            'projects' => Project::all(),
+            'banner_img' => "/assets/img/banner-2.jpg",
+            'banner_title' => 'All Projects',
+
             ]);
     }
 }
